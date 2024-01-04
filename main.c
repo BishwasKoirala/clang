@@ -1,10 +1,27 @@
 #include <stdio.h>
 
 int main (void) {
-  // change this to int use brackets to do additionals
-  double num ;
-  printf("anter the input\n");
-  scanf("%lf" , &num);
-  printf("The input is %d",(int)(num)) ;
+int num;
+  scanf("%d",&num);
+  switch (num) {
+    case 1 :
+      printf("Harry");
+      break;
+    case 2 :
+      printf("ron");
+      break;
+    case 3 :
+      printf("hermiony");
+        break;
+    case 4 :
+      printf("milfy");
+        break;
+
+    // else statement
+    default:
+      printf("input correct num from 1 to 4");
+      break;
+  };
+
   return 0 ;
 };
